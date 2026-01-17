@@ -56,7 +56,7 @@ const Home: NextPage = () => {
 
         <div className={styles.heroRight}>
           <img
-            src="https://file.aiquickdraw.com/imgcompressed/img/compressed_d78dc66dce8f3f08f5ceaf074aef4411.webp"
+            src="heros.webp"
             alt="Hero Movie"
           />
         </div>
