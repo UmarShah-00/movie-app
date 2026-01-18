@@ -2,117 +2,86 @@
   text-decoration: none;
 }
 
-/* =========================
-   CARD
-========================= */
 .card {
   position: relative;
-  width: 100%;
-  height: 290px;
   border-radius: 18px;
   overflow: hidden;
-  background: #1a1a1a;
   cursor: pointer;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: #1f1f1f;
 }
 
 .card:hover {
-  transform: translateY(-8px) scale(1.04);
-  box-shadow: 0 25px 50px rgba(255, 76, 76, 0.35);
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(255, 76, 76, 0.4);
 }
 
-/* =========================
-   POSTER
-========================= */
+/* Poster image */
 .poster {
   width: 100%;
-  height: 100%;
+  height: 280px;
   object-fit: cover;
   display: block;
-  filter: brightness(0.95) contrast(1.1);
-  transition: transform 0.5s ease;
 }
 
-.card:hover .poster {
-  transform: scale(1.12);
+/* Fallback box when image missing */
+.fallback {
+  width: 100%;
+  height: 280px;
+  background: linear-gradient(135deg, #444, #222);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 
-/* =========================
-   GRADIENT OVERLAY
-========================= */
+/* Gradient overlay for nice effect */
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.95) 10%,
-    rgba(0, 0, 0, 0.55) 40%,
-    rgba(0, 0, 0, 0.1) 70%
-  );
-  opacity: 0.85;
+  background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 70%);
 }
 
-/* =========================
-   CONTENT
-========================= */
+/* Content at bottom */
 .content {
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 18px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  color: #fff;
   z-index: 2;
 }
 
 .title {
   font-size: 1rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 8px;
-  line-height: 1.3;
+  font-weight: 600;
+  margin-bottom: 4px;
 }
 
-/* =========================
-   META INFO
-========================= */
 .meta {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  font-size: 0.9rem;
 }
 
 .rating {
-  font-size: 0.9rem;
-  font-weight: 600;
   color: #ffcc00;
+  font-weight: 700;
 }
 
-/* fake button look */
 .view {
-  font-size: 0.75rem;
+  display: inline-block;
+  margin-top: 6px;
   padding: 4px 10px;
-  border-radius: 20px;
-  background: linear-gradient(135deg, #ff4c4c, #ff1a1a);
-  color: #ffffff;
+  background: #ff4c4c;
+  border-radius: 12px;
+  font-size: 0.8rem;
   font-weight: 600;
-  opacity: 0;
-  transform: translateY(6px);
-  transition: all 0.3s ease;
+  transition: background 0.3s;
 }
 
-.card:hover .view {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-@media (max-width: 600px) {
-  .card {
-    height: 260px;
-  }
-
-  .title {
-    font-size: 0.9rem;
-  }
+.view:hover {
+  background: #ff1a1a;
 }

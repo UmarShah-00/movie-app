@@ -236,3 +236,28 @@
     font-size: 16px;
   }
 }
+/* Movies header with dropdown on right */
+.moviesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 40px auto 20px;
+  padding: 0 20px;
+}
+
+.dropdown {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background: #1f1f1f;
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dropdown:hover {
+  background: #2a2a2a;
+}
