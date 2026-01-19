@@ -122,7 +122,7 @@
 }
 
 .heroRight img {
-  width: 380px;
+  width: 450px;
   border-radius: 22px;
   object-fit: cover;
   filter: brightness(1.15) contrast(1.15) saturate(1.1);
