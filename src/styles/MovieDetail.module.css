@@ -173,3 +173,31 @@
     padding: 0 20px;
   }
 }
+.providers {
+  margin-top: 25px;
+}
+
+.providers h3 {
+  color: #ffcc00;
+  margin-bottom: 12px;
+}
+
+.providerList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.providerBtn {
+  background: #ff4c4c;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.providerBtn:hover {
+  background: #ff1a1a;
+}
