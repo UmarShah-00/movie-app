@@ -1,0 +1,166 @@
+/* =========================
+   GLOBAL CONTAINER
+========================= */
+.container {
+  min-height: 100vh;
+  background: #121212;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =========================
+   CARD / FORM
+========================= */
+.card {
+  width: 420px;
+  padding: 30px;
+  border-radius: 22px;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #bdbdbd;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   WEBCAM
+========================= */
+.webcamWrapper {
+  margin: 20px 0;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid #ff4c4c;
+}
+
+.webcam {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* =========================
+   FORM INPUTS (future use)
+========================= */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.input {
+  padding: 12px 16px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background: #1f1f1f;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.input:focus {
+  background: #2a2a2a;
+  box-shadow: 0 0 8px #ff4c4c;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.button {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff4c4c, #ff1a1a);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(255, 76, 76, 0.4);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =========================
+   MESSAGE / TEXT
+========================= */
+.message {
+  margin-top: 14px;
+  font-size: 14px;
+  color: #bbb;
+}
+
+/* =========================
+   LINK (CSS MODULE SAFE)
+========================= */
+.link {
+  color: #ff4c4c;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 500px) {
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+}
+.scanBarContainer {
+  width: 100%;
+  height: 6px;
+  background: #2a2a2a;
+  border-radius: 3px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.scanBar {
+  height: 100%;
+  background: linear-gradient(90deg, #ff4c4c, #ff1a1a);
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+.statusWarn {
+  font-size: 14px;
+  color: #bbb;
+  margin-top: 5px;
+  text-align: center;
+}
+
